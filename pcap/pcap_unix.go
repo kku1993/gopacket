@@ -23,13 +23,13 @@ import (
 )
 
 /*
-#cgo solaris LDFLAGS: -L /opt/local/lib -lpcap
-#cgo linux LDFLAGS: -lpcap
-#cgo dragonfly LDFLAGS: -lpcap
-#cgo freebsd LDFLAGS: -lpcap
-#cgo openbsd LDFLAGS: -lpcap
-#cgo netbsd LDFLAGS: -lpcap
-#cgo darwin LDFLAGS: -lpcap
+#cgo solaris LDFLAGS: -L /opt/local/lib -l:libpcap_akita.a
+#cgo linux LDFLAGS: -l:libpcap_akita.a
+#cgo dragonfly LDFLAGS: -l:libpcap_akita.a
+#cgo freebsd LDFLAGS: -l:libpcap_akita.a
+#cgo openbsd LDFLAGS: -l:libpcap_akita.a
+#cgo netbsd LDFLAGS: -l:libpcap_akita.a
+#cgo darwin LDFLAGS: -l:libpcap_akita.a
 #include <stdlib.h>
 #include <pcap.h>
 #include <stdint.h>
